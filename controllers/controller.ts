@@ -577,9 +577,7 @@ function changePilots(){
     console.log(showList);
     let theList = showList.map((e: any) => e.name + " " + e.surname);
     writeMe.textContent = theList;
-    let pickUpFirst: any = setTimeout(() =>{
-        prompt(`${theList}\n Type ONLY the NAME of the pilot to be upgrated`);
-    }, 1500);
+    let pickUpFirst: any = prompt(`${theList}\n Type ONLY the NAME of the pilot to be upgrated`);
     pickUpFirst = polishName(pickUpFirst);
     let pickUpLast: any = prompt(`${theList}\n ${pickUpFirst}\n Complete ONLY the SURNAME of the pilot to be upgrated`);
     pickUpLast = polishName(pickUpLast);

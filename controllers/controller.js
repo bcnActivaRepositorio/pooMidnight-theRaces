@@ -540,13 +540,11 @@ function changePilots() {
     }
     else {
         console.log(showList);
-        var theList_1 = showList.map(function (e) { return e.name + " " + e.surname; });
-        writeMe.textContent = theList_1;
-        var pickUpFirst = setTimeout(function () {
-            prompt(theList_1 + "\n Type ONLY the NAME of the pilot to be upgrated");
-        }, 1500);
+        var theList = showList.map(function (e) { return e.name + " " + e.surname; });
+        writeMe.textContent = theList;
+        var pickUpFirst = prompt(theList + "\n Type ONLY the NAME of the pilot to be upgrated");
         pickUpFirst = polishName(pickUpFirst);
-        var pickUpLast = prompt(theList_1 + "\n " + pickUpFirst + "\n Complete ONLY the SURNAME of the pilot to be upgrated");
+        var pickUpLast = prompt(theList + "\n " + pickUpFirst + "\n Complete ONLY the SURNAME of the pilot to be upgrated");
         pickUpLast = polishName(pickUpLast);
         var pickUpName = pickUpFirst + " " + pickUpLast;
         var findOut = matchNames(pickUpName);
