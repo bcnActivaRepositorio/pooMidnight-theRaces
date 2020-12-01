@@ -529,7 +529,7 @@ function changePilots() {
     var i;
     var text = "";
     // if repeating the operation deleting the arr first
-    showList = [];
+    showList.length = 0;
     console.log(showList);
     for (i in arrTeam) {
         (arrTeam[i].arrWork.map(function (e) { return (e instanceof Driver) ? showList.push(e) : e; }));
@@ -652,7 +652,7 @@ function changeMechanics() {
     var i;
     var text = "";
     // emptying the arr if you repeat the operation
-    showList = [];
+    showList = showList.splice(0, showList.length);
     for (i in arrTeam) {
         (arrTeam[i].arrWork.map(function (e) { return (e instanceof Mechanic) ? showList.push(e) : e; }));
     }

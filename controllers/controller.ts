@@ -565,7 +565,7 @@ function changePilots(){
     let i: any;
     let text: string = "";
     // if repeating the operation deleting the arr first
-    showList = [];
+    showList.length = 0;
     console.log(showList);
     for (i in arrTeam){
         (arrTeam[i].arrWork.map((e: any) => (e instanceof Driver) ? showList.push(e) : e));
@@ -696,7 +696,7 @@ function changeMechanics(){
     let i: any;
     let text: string = "";
     // emptying the arr if you repeat the operation
-    showList = []
+    showList = showList.splice(0, showList.length);
     for (i in arrTeam){
         (arrTeam[i].arrWork.map((e: any) => (e instanceof Mechanic) ? showList.push(e) : e));
     }

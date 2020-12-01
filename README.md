@@ -8,3 +8,7 @@
     Es demana que l’aplicació sigui capaç de donar d’alta, de baixa i de veure pilots i mecànics i de veure escuderies i bòlids. Les escuderies i els bòlids poden estar introduïts directament en el codi.
 
 #### Exercici Classes constructores BA
+
+#### Link GitHub Pages
+
+	(GitHub Pages)[https://bcnactivarepositorio.github.io/pooMidnight-theRaces/]
